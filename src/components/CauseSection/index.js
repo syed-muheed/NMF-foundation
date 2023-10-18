@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import sadaqaBanner from '../../images/sadaqa-banner.png'
 import zakatBanner from '../../images/zakat-banner.png'
-import endowmentBanner from '../../images/endowment-banner.png'
+import endowmentBanner from '../../images/impact-interest-banner.png'
 
 const CauseSection = (props) => {
     const ClickHandler = () => {
@@ -77,7 +77,7 @@ const CauseSection = (props) => {
                                 <div className="wpo-campaign-item">
                                     <div className="wpo-campaign-img">
                                         <img src={endowmentBanner} alt="sadaqa-banner" style={{ aspectRatio: 1 / 1 }} />
-                                        <span className="thumb">Endowment</span>
+                                        <span className="thumb">Interest for Impact</span>
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">

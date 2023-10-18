@@ -116,16 +116,15 @@
 .amount-selector {
     margin-bottom: 30px;
     margin-top: -20px;
-    .amount-selector-list {
-        display: flex;
 
-        li {
-            background: #ef5f34;
-            padding: 12px 22px;
-            border-radius: 5px;
-            color: #fff;
-            cursor: pointer;
-        }
+    .amount-selector-item {
+
+        background: #ef5f34;
+        padding: 12px 22px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+
     }
 }
 

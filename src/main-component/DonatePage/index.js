@@ -33,15 +33,25 @@ const DonatePage = () => {
                                     <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
                                         <input type="text" value={amount} onChange={setAmount} className="form-control" name="text" id="text" placeholder="Enter Donation Amount" />
-                                        <div className='amount-selector'>
-                                            <ul className='amount-selector-list'>
-                                                <li className='mx-1' onClick={() => setAmount(50)}>₹50</li>
-                                                <li className='mx-1' onClick={() => setAmount(100)}>₹100</li>
-                                                <li className='mx-1' onClick={() => setAmount(250)}>₹250</li>
-                                                <li className='mx-1' onClick={() => setAmount(500)}>₹500</li>
-                                                <li className='mx-1' onClick={() => setAmount(1000)}>₹1000</li>
-                                                <li className='mx-1' onClick={() => setAmount(5000)}>₹5000</li>
-                                            </ul>
+                                        <div className='amount-selector row g-2'>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(500)}>₹500</div>
+                                            </div>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(1000)}>₹1000</div>
+                                            </div>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(1500)}>₹1500</div>
+                                            </div>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(2000)}>₹2000</div>
+                                            </div>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(2500)}>₹2500</div>
+                                            </div>
+                                            <div className='col-auto'>
+                                                <div className='amount-selector-item' onClick={() => setAmount(5000)}>₹5000</div>
+                                            </div>
                                         </div>
                                         <select className="form-select" type="text" name="subject">
                                             <option >Donation Type</option>

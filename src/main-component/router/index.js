@@ -33,6 +33,8 @@ import VolunteerPage from '../VolunteerPage'
 import LoginPage from '../LoginPage'
 import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
+import PrivacyPolicy from '../PrivacyPolicy';
+import Terms from '../Terms';
 
 
 const AllRoute = () => {
@@ -47,7 +49,8 @@ const AllRoute = () => {
           <Route path='project-single/:id' element={<ProjectSinglePage />} />
           <Route path="contact" element={<ContactPage />} />
           <Route path='donate' element={<DonatePage />} />
-
+          <Route path='privacy-policy' element={<PrivacyPolicy />} />
+          <Route path='terms' element={<Terms />} />
           {/* <Route exact path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />
           <Route path='home2' element={<Homepage2 />} />
@@ -57,8 +60,7 @@ const AllRoute = () => {
           <Route path='home6' element={<Homepage6 />} />
           <Route path='home7' element={<Homepage7 />} />
           <Route path='about' element={<AboutPage />} />
-          <Route path='service' element={<ServicePage />} />
-          <Route path='service-single/:id' element={<SeviceSinglePage />} />
+
           <Route path='cause' element={<CausePage />} />
           <Route path='cause-single/:id' element={<CauseSinglePage />} />
           <Route path='team-single/:id' element={<TeamSinglePage />} />
