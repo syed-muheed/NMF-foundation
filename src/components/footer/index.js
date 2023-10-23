@@ -47,7 +47,7 @@ const Footer = (props) => {
                         <div className="col col-lg-2 col-md-6 col-sm-12 col-12">
                             <div className="widget link-widget">
                                 <div className="widget-title">
-                                    <h3>Services </h3>
+                                    <h3>Navigation</h3>
                                 </div>
                                 <ul>
                                     <li><Link onClick={ClickHandler} to="/about">About</Link></li>

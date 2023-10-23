@@ -48,7 +48,7 @@ const AllRoute = () => {
           <Route path='projects' element={<ProjectPage />} />
           <Route path='project-single/:id' element={<ProjectSinglePage />} />
           <Route path="contact" element={<ContactPage />} />
-          <Route path='donate' element={<DonatePage />} />
+          <Route path='donate/:donationType' element={<DonatePage />} />
           <Route path='privacy-policy' element={<PrivacyPolicy />} />
           <Route path='terms' element={<Terms />} />
           {/* <Route exact path='/' element={<Homepage />} />

@@ -17,7 +17,7 @@ const CauseSection = (props) => {
                     <div className="col-lg-6">
                         <div className="wpo-section-title">
                             <span>Together, let us strive towards a society where every citizen is treated with</span>
-                            <h2>Dignity, Respect, and Equality</h2>
+                            <h2>Dignity, Respect and Equality</h2>
                             <p>regardless of their background or beliefs.</p>
                         </div>
                     </div>
@@ -29,18 +29,18 @@ const CauseSection = (props) => {
                                 <div className="wpo-campaign-item">
                                     <div className="wpo-campaign-img">
                                         <img src={sadaqaBanner} alt="sadaqa-banner" style={{ aspectRatio: 1 / 1 }} />
-                                        <span className="thumb">Sadaqah</span>
+                                        <span className="thumb">Sadaqah Empowers</span>
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            <h2>Empowering Communities. <br />Liberating Finances by sadaqah.</h2>
+                                            <h2>Empowering Communities. Liberating Finances by sadaqah.</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate">Donate Now</Link></li>
+                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/sadaqah">Donate Sadaqah</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -53,18 +53,18 @@ const CauseSection = (props) => {
                                 <div className="wpo-campaign-item">
                                     <div className="wpo-campaign-img">
                                         <img src={zakatBanner} alt="zakat-banner" style={{ aspectRatio: 1 / 1 }} />
-                                        <span className="thumb">Zakat</span>
+                                        <span className="thumb">Zakat Transforms</span>
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            <h2>Unlocking Financial Freedom, <br />Together with Zakat.</h2>
+                                            <h2>Unlocking Financial Freedom, Together with Zakat.</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate">Donate Now</Link></li>
+                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/zakat">Donate Zakat</Link></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -77,11 +77,11 @@ const CauseSection = (props) => {
                                 <div className="wpo-campaign-item">
                                     <div className="wpo-campaign-img">
                                         <img src={endowmentBanner} alt="sadaqa-banner" style={{ aspectRatio: 1 / 1 }} />
-                                        <span className="thumb">Interest for Impact</span>
+                                        <span className="thumb">Interest Impact</span>
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            {/* <h2>Empowering Communities. <br />Liberating Finances by sadaqah.</h2> */}
+                                            <h2>Paying off <br/>the Interest Component of Loans</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>
