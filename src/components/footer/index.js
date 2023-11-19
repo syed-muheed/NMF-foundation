@@ -77,7 +77,7 @@ const Footer = (props) => {
                                 <div className="widget-title">
                                     <h3>Projects</h3>
                                 </div>
-                                <ul className="d-flex">
+                                {/* <ul className="d-flex">
                                     {Projects.slice(0, 6).map((project, pitem) => (
                                         <li className="grid" key={pitem}>
                                             <div className="img-holder">
@@ -87,7 +87,7 @@ const Footer = (props) => {
                                             </div>
                                         </li>
                                     ))}
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
