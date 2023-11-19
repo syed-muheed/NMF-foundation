@@ -55,9 +55,9 @@ export default class Header2 extends Component {
                                             <li className="menu-item-has-children">
                                                 <Link to="/about">About</Link>
                                             </li>
-                                            <li className="menu-item-has-children">
+                                            {/* <li className="menu-item-has-children">
                                                 <Link to="/projects">Projects</Link>
-                                            </li>
+                                            </li> */}
                                             <li><Link onClick={ClickHandler} to="/contact">Contact</Link></li>
                                         </ul>
 

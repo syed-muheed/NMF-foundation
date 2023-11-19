@@ -15,11 +15,11 @@ const menus = [
         title: 'About',
         link: '/about',
     },
-    {
-        id: 3,
-        title: 'Projects',
-        link: '/projects',
-    },
+    // {
+    //     id: 3,
+    //     title: 'Projects',
+    //     link: '/projects',
+    // },
 
     {
         id: 4,
