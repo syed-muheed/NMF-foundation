@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import Navbar2 from '../../components/Navbar2';
 import PageTitle from '../../components/pagetitle'
 import Footer from '../../components/footer'
@@ -11,28 +11,107 @@ import pimg4 from '../../images/checkout/img-4.png'
 import { useParams } from 'react-router-dom';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import qrCode from '../../images/qr-code.png'
+import SimpleReactValidator from 'simple-react-validator';
+import { toast } from 'react-toastify';
+import { loadReCaptcha } from 'react-recaptcha-v3'
+
+const validateEmail = (email) => {
+    const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+};
+
+const validateMobile = (mobile) => {
+    const re = /^[6-9]\d{9}$/;
+    return re.test(mobile);
+};
 
 const DonatePage = () => {
     const [amount, setAmount] = useState('')
-    const [modal, setModal] = useState(false);
+    const [name, setName] = useState('')
+    const [pan, setPan] = useState('')
+    const [mobile, setMobile] = useState('')
+    const [email, setEmail] = useState('')
 
     const { donationType } = useParams()
-    console.log(donationType)
+
+    useEffect(() => {
+        loadReCaptcha(process.env.REACT_APP_RECAPTCHA_KEY)
+    }, [])
+
     const SubmitHandler = (e) => {
         e.preventDefault()
     }
-
-    const toggle = () => setModal(!modal);
 
     const getButtonName = () => {
         if (donationType === 'zakat') {
             return "Zakat"
         } else if (donationType === 'sadaqah') {
             return "Sadaqah"
-        } else if (donationType === 'interest-impact') {
+        } else if (donationType === 'ribba') {
             return "Interest Impact"
         }
     }
+
+    const validateForm = () => {
+        if (!amount || isNaN(amount) || amount <= 0) {
+            toast.error("Invalid amount");
+            return
+        }
+
+        if (!name.trim()) {
+            toast.error("Name is required");
+            return
+        }
+
+        if (!validateEmail(email)) {
+            toast.error("Invalid email");
+            return
+        }
+
+        if (!validateMobile(mobile)) {
+            toast.error("Invalid mobile number. Mobile number must be in Indian format starting with 6-9 and contain 10 digits.");
+            return
+        }
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        validateForm()
+
+        try {
+            window.grecaptcha.ready(async () => {
+                const captchaToken = await window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_KEY, { action: 'submit' });
+                const requestPayload = {
+                    donationType: donationType,
+                    isAnonymous: false,
+                    name: name,
+                    email: email,
+                    amount: amount,
+                    mobile: mobile,
+                    pan: pan,
+                    captcha: captchaToken
+                };
+
+                const response = await fetch('https://api.halalfy.app/v1/open/web/donation/initiate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestPayload)
+                });
+                const responseData = await response.json();
+                if (responseData.paymentUrl) {
+                    window.location.href = responseData.paymentUrl
+                } else {
+                    toast.error('Something went wrong! Please try again')
+                }
+
+            });
+        } catch (error) {
+            toast.error('Error during donation initiation:', error);
+            }
+    };
+
 
     const getContent = () => {
         if (donationType === 'sadaqah') {
@@ -109,7 +188,7 @@ const DonatePage = () => {
                     </p>
                 </div>
             )
-        } else if (donationType === 'interest-impact') {
+        } else if (donationType === 'ribba') {
             return (
                 <div>
                     <p>As an organization committed to financial ethics and community well-being, we’ve embarked
@@ -145,7 +224,7 @@ const DonatePage = () => {
             return "Zakat Transforms"
         } else if (donationType === 'sadaqah') {
             return "Sadaqah Empowers"
-        } else if (donationType === 'interest-impact') {
+        } else if (donationType === 'ribba') {
             return "Interest Impact"
         }
     }
@@ -165,7 +244,16 @@ const DonatePage = () => {
                                 <form onSubmit={SubmitHandler}>
                                     <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
-                                        <input type="number" min={0} value={amount} onChange={(e) => setAmount(e.target.value)} className="form-control" name="text" id="text" placeholder="Enter Donation Amount" />
+                                        <input
+                                            type="number"
+                                            min={0}
+                                            value={amount}
+                                            onChange={(e) => setAmount(e.target.value)}
+                                            className="form-control"
+                                            name="amount"
+                                            id="amount"
+                                            placeholder="Enter Donation Amount"
+                                        />
                                         <div className='amount-selector row g-2'>
                                             <div className='col-auto'>
                                                 <div className='amount-selector-item' onClick={() => setAmount(500)}>₹500</div>
@@ -191,22 +279,51 @@ const DonatePage = () => {
                                         <h2>Details</h2>
                                         <div className="row">
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="name" id="fname" placeholder="Full Name" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="name"
+                                                    placeholder="Full Name"
+                                                    value={name}
+                                                    onChange={(e) => setName(e.target.value)}
+                                                />
                                             </div>
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="pan" id="pan" placeholder="PAN Number" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    name="mobile"
+                                                    id="mobile"
+                                                    placeholder="Mobile Number"
+                                                    value={mobile}
+                                                    onChange={(e) => setMobile(e.target.value)}
+                                                />
                                             </div>
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group clearfix">
-                                                <input type="email" className="form-control" name="email" id="email" placeholder="Email" />
+                                                <input
+                                                    type="email"
+                                                    className="form-control"
+                                                    id="email"
+                                                    placeholder="Email"
+                                                    value={email}
+                                                    onChange={(e) => setEmail(e.target.value)}
+                                                />
                                             </div>
                                             <div className="col-lg-6 col-md-6 col-sm-6 col-12 form-group">
-                                                <input type="text" className="form-control" name="Adress" id="Adress" placeholder="Address" />
+                                                <input
+                                                    type="text"
+                                                    className="form-control"
+                                                    id="pan"
+                                                    placeholder="PAN Number"
+                                                    value={pan}
+                                                    onChange={(e) => setPan(e.target.value)}
+                                                />
                                             </div>
                                         </div>
                                     </div>
                                     {getContent()}
                                     <div className="submit-area">
-                                        <button type="submit" className="theme-btn submit-btn" onClick={toggle}>Donate {getButtonName()}</button>
+                                        <button type="submit" className="theme-btn submit-btn" onClick={handleSubmit}>Donate {getButtonName()}</button>
                                     </div>
                                 </form>
                             </div>
@@ -216,17 +333,6 @@ const DonatePage = () => {
             </div>
             <Footer />
             <Scrollbar />
-            <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>QR Code</ModalHeader>
-                <ModalBody>
-                    <img src={qrCode} alt="qr-code" width="100%" height="auto" style={{ maxHeight: '500px', objectFit: 'cover' }} />
-                </ModalBody>
-                <ModalFooter>
-                    <Button color="secondary" onClick={toggle}>
-                        Cancel
-                    </Button>
-                </ModalFooter>
-            </Modal>
         </Fragment>
     )
 };
