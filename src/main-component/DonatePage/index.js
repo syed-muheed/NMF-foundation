@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { loadReCaptcha } from 'react-recaptcha-v3'
 
@@ -11,12 +11,21 @@ import Logo from '../../images/logo-nmf.png'
 
 const DonatePage = () => {
     const [amount, setAmount] = useState('')
+    const [isLoading, setLoading] = useState(false)
 
     const { donationType } = useParams()
+    const navigate = useNavigate()
 
     useEffect(() => {
         loadReCaptcha(process.env.REACT_APP_RECAPTCHA_KEY)
     }, [])
+
+    useEffect(() => {
+        const validDonationTypes = ['zakat', 'sadaqah', 'ribba'];
+        if (!validDonationTypes.includes(donationType)) {
+            navigate('/404');
+        }
+    }, [donationType, navigate]);
 
     const SubmitHandler = (e) => {
         e.preventDefault()
@@ -42,7 +51,7 @@ const DonatePage = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         validateForm()
-
+        setLoading(true)
         try {
             window.grecaptcha.ready(async () => {
                 const captchaToken = await window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_KEY, { action: 'submit' });
@@ -62,12 +71,15 @@ const DonatePage = () => {
                 const responseData = await response.json();
                 if (responseData.paymentUrl) {
                     window.location.href = responseData.paymentUrl
+                    setLoading(false)
                 } else {
                     toast.error('Something went wrong! Please try again')
+                    setLoading(false)
                 }
 
             });
         } catch (error) {
+            setLoading(false)
             toast.error('Error during donation initiation:', error);
         }
     };
@@ -189,6 +201,11 @@ const DonatePage = () => {
         }
     }
 
+    const handleChange = (e) => {
+        const value = e.target.value.replace(/[^0-9]/g, '');
+        setAmount(value);
+    };
+
     return (
         <Fragment>
             <Navbar2 Logo={Logo} />
@@ -204,16 +221,19 @@ const DonatePage = () => {
                                 <form onSubmit={SubmitHandler}>
                                     <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
-                                        <input
-                                            type="number"
-                                            min={0}
-                                            value={amount}
-                                            onChange={(e) => setAmount(e.target.value)}
-                                            className="form-control"
-                                            name="amount"
-                                            id="amount"
-                                            placeholder="Enter Donation Amount"
-                                        />
+                                        <div className="input-group mb-3">
+                                            <span className="input-group-text" style={{ height: 50 }}>₹</span>
+                                            <input
+                                                type="text"
+                                                className="form-control"
+                                                value={amount}
+                                                onChange={handleChange}
+                                                placeholder="Enter Donation Amount"
+                                                pattern="[0-9]*"
+                                                inputMode="numeric" 
+                                            />
+                                        </div>
+
                                         <div className='amount-selector row g-2'>
                                             <div className='col-auto'>
                                                 <div className='amount-selector-item' onClick={() => setAmount(500)}>₹500</div>
@@ -237,7 +257,14 @@ const DonatePage = () => {
                                     </div>
                                     {getContent()}
                                     <div className="submit-area">
-                                        <button type="submit" className="theme-btn submit-btn" onClick={handleSubmit}>Donate {getButtonName()}</button>
+                                        <button
+                                            type="submit"
+                                            disabled={isLoading}
+                                            className="theme-btn submit-btn"
+                                            onClick={handleSubmit}
+                                        >
+                                            {isLoading ? 'Loading...' : `Donate ${getButtonName()}`}
+                                        </button>
                                     </div>
                                 </form>
                             </div>

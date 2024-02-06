@@ -53,6 +53,8 @@ const AllRoute = () => {
           <Route path='donate/receipt/:orderId' element={<DonationReceipt />} />
           <Route path='privacy-policy' element={<PrivacyPolicy />} />
           <Route path='terms' element={<Terms />} />
+          <Route path='404' element={<ErrorPage />} />
+
           {/* <Route exact path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />
           <Route path='home2' element={<Homepage2 />} />
@@ -79,7 +81,6 @@ const AllRoute = () => {
           <Route path='blog-left-sidebar' element={<BlogPageLeft />} />
           <Route path='blog-fullwidth' element={<BlogPageFullwidth />} />
           <Route path='volunteer' element={<VolunteerPage />} />
-          <Route path='404' element={<ErrorPage />} />
           <Route path='contact' element={<ContactPage />} />
           <Route path='login' element={<LoginPage />} />
           <Route path='register' element={<SignUpPage />} />
