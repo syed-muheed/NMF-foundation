@@ -35,6 +35,7 @@ import SignUpPage from '../SignUpPage'
 import ForgotPassword from '../ForgotPassword'
 import PrivacyPolicy from '../PrivacyPolicy';
 import Terms from '../Terms';
+import DonationReceipt from '../DonationReceipt';
 
 
 const AllRoute = () => {
@@ -49,6 +50,7 @@ const AllRoute = () => {
           <Route path='project-single/:id' element={<ProjectSinglePage />} /> */}
           <Route path="contact" element={<ContactPage />} />
           <Route path='donate/:donationType' element={<DonatePage />} />
+          <Route path='donate/receipt/:orderId' element={<DonationReceipt />} />
           <Route path='privacy-policy' element={<PrivacyPolicy />} />
           <Route path='terms' element={<Terms />} />
           {/* <Route exact path='/' element={<Homepage />} />
