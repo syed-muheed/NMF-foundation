@@ -37,7 +37,7 @@ const DonatePage = () => {
         } else if (donationType === 'sadaqah') {
             return "Sadaqah"
         } else if (donationType === 'ribba') {
-            return "Interest Impact"
+            return "Ribba"
         }
     }
 
@@ -50,38 +50,47 @@ const DonatePage = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        validateForm()
-        setLoading(true)
-        try {
-            window.grecaptcha.ready(async () => {
-                const captchaToken = await window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_KEY, { action: 'submit' });
-                const requestPayload = {
-                    donationType: donationType,
-                    amount: amount,
-                    captcha: captchaToken
-                };
-
-                const response = await fetch('https://api.halalfy.app/v1/open/web/donation/initiate', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(requestPayload)
-                });
-                const responseData = await response.json();
-                if (responseData.paymentUrl) {
-                    window.location.href = responseData.paymentUrl
-                    setLoading(false)
-                } else {
-                    toast.error('Something went wrong! Please try again')
-                    setLoading(false)
-                }
-
-            });
-        } catch (error) {
-            setLoading(false)
-            toast.error('Error during donation initiation:', error);
+        if (donationType === 'zakat') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateZakat'
+        } else if (donationType === 'sadaqah') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateSadaqah'
+        } else if (donationType === 'ribba') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateRiba'
         }
+
+
+        // validateForm()
+        // setLoading(true)
+        // try {
+        //     window.grecaptcha.ready(async () => {
+        //         const captchaToken = await window.grecaptcha.execute(process.env.REACT_APP_RECAPTCHA_KEY, { action: 'submit' });
+        //         const requestPayload = {
+        //             donationType: donationType,
+        //             amount: amount,
+        //             captcha: captchaToken
+        //         };
+
+        //         const response = await fetch('https://api.halalfy.app/v1/open/web/donation/initiate', {
+        //             method: 'POST',
+        //             headers: {
+        //                 'Content-Type': 'application/json'
+        //             },
+        //             body: JSON.stringify(requestPayload)
+        //         });
+        //         const responseData = await response.json();
+        //         if (responseData.paymentUrl) {
+        //             window.location.href = responseData.paymentUrl
+        //             setLoading(false)
+        //         } else {
+        //             toast.error('Something went wrong! Please try again')
+        //             setLoading(false)
+        //         }
+
+        //     });
+        // } catch (error) {
+        //     setLoading(false)
+        //     toast.error('Error during donation initiation:', error);
+        // }
     };
 
 
@@ -183,7 +192,7 @@ const DonatePage = () => {
                         </li>
                     </ol>
                     <p>
-                        By participating in “Interest for Impact,” you’re not only securing your financial ethics but also
+                        By participating in “Ribba” you’re not only securing your financial ethics but also
                         actively contributing to a more equitable and interest-free financial future for all.
                     </p>
                 </div>
@@ -219,7 +228,7 @@ const DonatePage = () => {
                             </div>
                             <div id="Donations" className="tab-pane">
                                 <form onSubmit={SubmitHandler}>
-                                    <div className="wpo-donations-amount">
+                                    {/* <div className="wpo-donations-amount">
                                         <h2>Your Donation</h2>
                                         <div className="input-group mb-3">
                                             <span className="input-group-text" style={{ height: 50 }}>₹</span>
@@ -230,7 +239,7 @@ const DonatePage = () => {
                                                 onChange={handleChange}
                                                 placeholder="Enter Donation Amount"
                                                 pattern="[0-9]*"
-                                                inputMode="numeric" 
+                                                inputMode="numeric"
                                             />
                                         </div>
 
@@ -254,7 +263,7 @@ const DonatePage = () => {
                                                 <div className='amount-selector-item' onClick={() => setAmount(5000)}>₹5000</div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                     {getContent()}
                                     <div className="submit-area">
                                         <button
