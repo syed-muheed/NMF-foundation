@@ -3,7 +3,7 @@ import Teams from '../../api/team'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 
 class TeamSection extends Component {
@@ -54,9 +54,9 @@ class TeamSection extends Component {
             ]
         };
 
-        const ClickHandler = () =>{
+        const ClickHandler = () => {
             window.scrollTo(10, 0);
-         }
+        }
 
         return (
             <div className="wpo-team-area section-padding">
@@ -65,18 +65,18 @@ class TeamSection extends Component {
                         <div className="col-lg-6">
                             <div className="wpo-section-title">
                                 <span>Expert Team</span>
-                                <h2>Meet our exceptional team</h2>
-                                <p>As a united team, we can shape an interest-free financial system and inspire positive change in our community.</p>
+                                <h2>Meet our Leadership Team</h2>
+                                <p>Dedicated and compassionate, our team is the driving force behind transformative initiatives. Their tireless efforts uplift communities and inspire positive change, making a lasting impact on those we serve.</p>
                             </div>
                         </div>
                     </div>
                     <div className="wpo-team-wrap">
                         <div className="team-slider">
-                            {/* <Slider {...settings}>
-                                {Teams.slice(0,6).map((Team, tm) => (
+                            <Slider {...settings}>
+                                {Teams.slice(0, 6).map((Team, tm) => (
                                     <div className="wpo-team-item" key={tm}>
                                         <div className="wpo-team-img">
-                                            <img src={Team.tImg} alt=""/>
+                                            <img src={Team.tImg} alt="" />
                                         </div>
                                         <div className="wpo-team-content">
                                             <h2><Link onClick={ClickHandler} to={`/team-single/${Team.id}`}>{Team.name}</Link></h2>
@@ -84,7 +84,7 @@ class TeamSection extends Component {
                                         </div>
                                     </div>
                                 ))}
-                            </Slider> */}
+                            </Slider>
                         </div>
                     </div>
                 </div>

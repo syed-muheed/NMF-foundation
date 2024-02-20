@@ -11,25 +11,26 @@ import EventSection from '../../components/EventSection'
 import BlogSection from '../../components/BlogSection'
 import Footer from '../../components/footer'
 import Scrollbar from '../../components/scrollbar'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-nmf.png'
 import PartnerSection from '../../components/PartnerSection';
 import vimg from '../../images/volunteer.png'
+import Navbar2 from '../../components/Navbar2';
 
 
 const HomePage =() => {
     return(
         <Fragment>
-            <Navbar Logo={Logo}/>
+            <Navbar2 Logo={Logo}/>
             <Hero/>
-            <Service Fclass={'wpo-features-section-s2'} vclassClass={'v1'}/>
+            {/* <Service Fclass={'wpo-features-section-s2'} vclassClass={'v1'}/> */}
             <About/>
             <CauseSection/>
             <TeamSection/>
-            <Testimonial/>
+            {/* <Testimonial/>
             <CtaSection vImg={vimg} cTitle={'Lets Chenge The World With Humanity'}/>
             <EventSection/>
             <BlogSection/>
-            <PartnerSection/>
+            <PartnerSection/> */}
             <Scrollbar/>
             <Footer/>
         </Fragment>

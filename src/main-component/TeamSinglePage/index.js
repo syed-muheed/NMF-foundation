@@ -5,7 +5,8 @@ import Scrollbar from '../../components/scrollbar'
 import { useParams } from 'react-router-dom'
 import Teams from '../../api/team';
 import Footer from '../../components/footer'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-nmf.png'
+import Navbar2 from '../../components/Navbar2';
 
 
 const TeamSinglePage = (props) => {
@@ -21,7 +22,7 @@ const TeamSinglePage = (props) => {
 
     return (
         <Fragment>
-            <Navbar Logo={Logo}/>
+            <Navbar2 Logo={Logo} />
             <PageTitle pageTitle={TeamSingle.name} pagesub={TeamSingle.title} />
             <div className="attorney-pg-area section-padding">
                 <div className="container">
@@ -36,13 +37,13 @@ const TeamSinglePage = (props) => {
                                 <div className="attorney-info-text">
                                     <h2>{TeamSingle.name}</h2>
                                     <ul>
-                                        <li>Position: <span>Siniour {TeamSingle.title}</span></li>
-                                        <li>Practice Area:<span>{TeamSingle.title}</span></li>
+                                        <li>Position: <span>{TeamSingle.title}</span></li>
+                                        {/* <li>Practice Area:<span>{TeamSingle.title}</span></li>
                                         <li>Experience:<span>12 Years</span></li>
                                         <li>Address:<span>Millington, Ave, TN 38053</span></li>
                                         <li>Phone:<span>+00 568 746 987</span></li>
                                         <li>Email:<span>youremail@gmail.com</span></li>
-                                        <li>Fax:<span>568 746 987</span></li>
+                                        <li>Fax:<span>568 746 987</span></li> */}
                                     </ul>
                                 </div>
                             </div>
@@ -53,10 +54,9 @@ const TeamSinglePage = (props) => {
                             <div className="col-lg-12">
                                 <div className="exprience-wrap">
                                     <h2>Personal Experience</h2>
-                                    <p>The purpose of lorem ipsum is to create a natural looking block oftext (sentence, paragraph, page, etc.) that doesn't distract from thelayout. A practice not without controversy, laying out pages withmeaningless filler text can be very useful when the focus is meantto be on design, not content.There are many variations of passages of Lorem Ipsum available.</p>
-                                    <p>But the majority have suffered alteration in some form, by injected humour, or randomised words which don’t look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing hidden in the middle of text generators on the Internet tend to repeat.</p>
+                                    <p>{TeamSingle.description}</p>
                                 </div>
-                                <div className="at-progress">
+                                {/* <div className="at-progress">
                                     <div className="row">
                                         <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 custom-grid">
                                             <div className="progress yellow">
@@ -147,13 +147,13 @@ const TeamSinglePage = (props) => {
                                             </div>
                                         </form>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <Footer />
             <Scrollbar />
         </Fragment>
     )

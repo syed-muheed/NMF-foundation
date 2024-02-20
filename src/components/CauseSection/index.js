@@ -16,9 +16,9 @@ const CauseSection = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-6">
                         <div className="wpo-section-title">
-                            <span>Together, let us strive towards a society where every citizen is treated with</span>
-                            <h2>Dignity, Respect and Equality</h2>
-                            <p>regardless of their background or beliefs.</p>
+                            <span>Support Our Cause</span>
+                            <h2>Give Generously Today</h2>
+                            <p>Contribute to empower lives, making a positive impact in building a better, Riba-free community.</p>
                         </div>
                     </div>
                 </div>
@@ -77,18 +77,18 @@ const CauseSection = (props) => {
                                 <div className="wpo-campaign-item">
                                     <div className="wpo-campaign-img">
                                         <img src={endowmentBanner} alt="sadaqa-banner" style={{ aspectRatio: 1 / 1 }} />
-                                        <span className="thumb">Interest Impact</span>
+                                        <span className="thumb">Riba Impact</span>
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            <h2>Paying off <br/>the Interest Component of Loans</h2>
+                                            <h2>Purify your<br /> earnings by removing <br />Riba</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/ribba">Donate Interest</Link></li>
+                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/ribba">Donate Riba</Link></li>
                                                 </ul>
                                             </div>
                                         </div>

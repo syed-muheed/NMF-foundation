@@ -63,13 +63,13 @@ export default class Header2 extends Component {
 
                                     </div>
                                 </div>
-                                {/* <div className="col-lg-3 col-md-2 col-2">
+                                <div className="col-lg-3 col-md-2 col-2">
                                     <div className="header-right">
                                         <div className="close-form">
                                             <Link onClick={ClickHandler} className="theme-btn" to="/donate">Donate Now</Link>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </nav>

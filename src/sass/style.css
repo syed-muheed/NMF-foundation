@@ -2745,12 +2745,12 @@ h2.hidden {
 .wpo-hero-section-6 .right-vec .right-items-wrap .right-item .wpo-total-project,
 .wpo-hero-section-7 .right-vec .right-items-wrap .right-item .wpo-total-project {
   padding: 20px 30px;
-  background: linear-gradient(to left, #225c55, rgba(93, 196, 184, 0.85));
   border-radius: 40px;
   overflow: hidden;
   position: relative;
   z-index: 1;
   margin-bottom: 30px;
+  
 }
 @media (max-width: 1400px) {
   .wpo-hero-section-1 .right-vec .right-items-wrap .right-item .wpo-total-project,

@@ -44,7 +44,8 @@ const AllRoute = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<CausePage />} />
+        <Route exact path='/' element={<Homepage />} />
+          <Route exact path='/donate' element={<CausePage />} />
           <Route path='about' element={<CauseSinglePage />} />
           {/* <Route path='projects' element={<ProjectPage />} />
           <Route path='project-single/:id' element={<ProjectSinglePage />} /> */}
@@ -54,6 +55,7 @@ const AllRoute = () => {
           <Route path='privacy-policy' element={<PrivacyPolicy />} />
           <Route path='terms' element={<Terms />} />
           <Route path='404' element={<ErrorPage />} />
+          <Route path='team-single/:id' element={<TeamSinglePage />} />
 
           {/* <Route exact path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />
@@ -67,7 +69,6 @@ const AllRoute = () => {
 
           <Route path='cause' element={<CausePage />} />
           <Route path='cause-single/:id' element={<CauseSinglePage />} />
-          <Route path='team-single/:id' element={<TeamSinglePage />} />
           <Route path='event' element={<EventPage />} />
           <Route path='event-s2' element={<EventPage2 />} />
           <Route path='event-single/:id' element={<EventSinglePage />} />

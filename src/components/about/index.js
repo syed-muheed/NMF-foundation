@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from  'react-router-dom'
-import abimg from '../../images/about.jpg'
+import abimg from '../../images/about.png'
 import shape from '../../images/ab-shape-2.png'
 
 
@@ -24,7 +24,7 @@ const About = (props) => {
                                     <div className="s-s2"></div>
                                 </div>
                                 <div className="wpo-ab-shape-2"><img src={shape} alt=""/></div>
-                                <div className="wpo-total-raised">
+                                {/* <div className="wpo-total-raised">
                                     <div className="wpo-total-raised-wrap">
                                         <div className="wpo-total-raised-icon">
                                             <i className="fi flaticon-wallet-filled-money-tool"></i>
@@ -44,23 +44,21 @@ const About = (props) => {
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-text">
                             <span>About Us</span>
-                            <h2>We Can Save More Lifes With Your Helping Hand.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices
-                                gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+                            <h2>Financial Liberation: Riba-Free Solutions</h2>
+                            <p>Empowering individuals and families, the Nimal Maula Foundation is dedicated to providing financial literacy education and advocating for riba-free transactions in our community. Our commitment ensures fair and ethical financial solutions, liberating people from the burden of riba.</p>
                             <ul>
-                                <li>The standard chunk of Lorem Ipsum used since.</li>
-                                <li>Randomised words which don't look even slightly believable.</li>
-                                <li>Making this the first true generator on the Internet.</li>
+                                <li>Elevate financial well-being.</li>
+                                <li>Holistic monetary and non-monetary support.</li>
+                                <li>Navigate poverty with sustainable measures</li>
                             </ul>
-                            <Link onClick={ClickHandler} className="theme-btn-s2" to="/about">More About</Link>
+                            {/* <Link onClick={ClickHandler} className="theme-btn-s2" to="/about">More About</Link> */}
                         </div>
                     </div>
                 </div>
