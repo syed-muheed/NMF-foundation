@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import ts1 from '../../images/testimonial/img-1.jpg'
-import ts2 from '../../images/testimonial/img-2.jpg'
+import ts1 from '../../images/testimonial/Mohammed Anwar.png'
+import ts2 from '../../images/testimonial/Farheen Begum.png'
 import ts3 from '../../images/testimonial/img-3.jpg'
 
 
@@ -58,21 +58,15 @@ class Testimonial extends Component {
         const testimonial = [
             {
                 tsImg: ts1,
-                Des: "Lorem ipsum dolor sit amet, consectetur adiping elit,  do eiusmod tempor incididunt ut labore et doliore magna aliqjtua. Quis ipsum suspendisse ultrices gravida. Risus commodo maepac cenas.",
-                Title: 'Harverd Tommy',
-                Sub: "Maneger Of MNTR",
+                Des: "I'm thankful to the Nimal Maula Foundation team for helping me escape the sin of Riba. They provided 23,000 rupees to release my gold from Muthoot Finance. I seek forgiveness from Allah for my mistake.",
+                Title: 'Mohammed Anwar',
+                Sub: "",
             },
             {
                 tsImg: ts2,
-                Des: "Lorem ipsum dolor sit amet, consectetur adiping elit,  do eiusmod tempor incididunt ut labore et doliore magna aliqjtua. Quis ipsum suspendisse ultrices gravida. Risus commodo maepac cenas.",
-                Title: 'Marry Jenefer',
-                Sub: "CEO Of Golden Bravo",
-            },
-            {
-                tsImg: ts3,
-                Des: "Lorem ipsum dolor sit amet, consectetur adiping elit,  do eiusmod tempor incididunt ut labore et doliore magna aliqjtua. Quis ipsum suspendisse ultrices gravida. Risus commodo maepac cenas.",
-                Title: 'William Robert',
-                Sub: "CEO Of Bexima",
+                Des: "Main Nimal Maula Foundation ke team ka shukriya ada karti hoon ke unho ne mujhe Riba ke gunaah se bachaya. Unhone mere sonay ko Manappuram Finance se nikalne ke liye 10,000 rupaye diye. Main apne ghalti ke liye Allah se Maafi chahti hoon.",
+                Title: 'Farheen Begum',
+                Sub: "",
             }
         ]
         return (

@@ -21,7 +21,7 @@ const Service = (props) => {
                                     </div>
                                 </div>
                                 <div className="wpo-features-text">
-                                    <h2><Link onClick={ClickHandler} to={`/service-single/${service.id}`}>{service.title}</Link></h2>
+                                    <h2>{service.title}</h2>
                                 </div>
                             </div>
                         </div>

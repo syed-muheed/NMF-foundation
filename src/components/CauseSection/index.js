@@ -5,8 +5,15 @@ import zakatBanner from '../../images/zakat-banner.png'
 import endowmentBanner from '../../images/impact-interest-banner.png'
 
 const CauseSection = (props) => {
-    const ClickHandler = () => {
-        window.scrollTo(10, 0);
+    const ClickHandler = (e,donationType) => {
+        e.preventDefault();
+        if (donationType === 'zakat') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateZakat'
+        } else if (donationType === 'sadaqah') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateSadaqah'
+        } else if (donationType === 'ribba') {
+            window.location.href = 'https://payg.in/customer/#/pay-profile/DonateRiba'
+        }
     }
 
     return (
@@ -40,7 +47,7 @@ const CauseSection = (props) => {
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/sadaqah">Donate Sadaqah</Link></li>
+                                                    <li><a href='https://payg.in/customer/#/pay-profile/DonateSadaqah'  className="e-btn" >Donate Sadaqah</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -64,7 +71,7 @@ const CauseSection = (props) => {
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/zakat">Donate Zakat</Link></li>
+                                                    <li><a href='https://payg.in/customer/#/pay-profile/DonateZakat' className="e-btn">Donate Zakat</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -88,7 +95,7 @@ const CauseSection = (props) => {
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><Link onClick={ClickHandler} className="e-btn" to="/donate/ribba">Donate Riba</Link></li>
+                                                    <li><a href='https://payg.in/customer/#/pay-profile/DonateRiba' className="e-btn">Donate Riba</a></li>
                                                 </ul>
                                             </div>
                                         </div>

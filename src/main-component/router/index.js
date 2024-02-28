@@ -46,7 +46,7 @@ const AllRoute = () => {
         <Routes>
         <Route exact path='/' element={<Homepage />} />
           <Route exact path='/donate' element={<CausePage />} />
-          <Route path='about' element={<CauseSinglePage />} />
+          <Route path='about' element={<AboutPage />} />
           {/* <Route path='projects' element={<ProjectPage />} />
           <Route path='project-single/:id' element={<ProjectSinglePage />} /> */}
           <Route path="contact" element={<ContactPage />} />
@@ -56,6 +56,7 @@ const AllRoute = () => {
           <Route path='terms' element={<Terms />} />
           <Route path='404' element={<ErrorPage />} />
           <Route path='team-single/:id' element={<TeamSinglePage />} />
+          <Route path='blog-single/:id' element={<BlogDetails />} />
 
           {/* <Route exact path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />

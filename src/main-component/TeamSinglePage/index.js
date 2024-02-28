@@ -3,7 +3,7 @@ import Navbar from '../../components/Navbar'
 import PageTitle from '../../components/pagetitle'
 import Scrollbar from '../../components/scrollbar'
 import { useParams } from 'react-router-dom'
-import Teams from '../../api/team';
+import { Teams } from '../../api/team';
 import Footer from '../../components/footer'
 import Logo from '../../images/logo-nmf.png'
 import Navbar2 from '../../components/Navbar2';
@@ -54,7 +54,7 @@ const TeamSinglePage = (props) => {
                             <div className="col-lg-12">
                                 <div className="exprience-wrap">
                                     <h2>Personal Experience</h2>
-                                    <p>{TeamSingle.description}</p>
+                                    <p>{TeamSingle.description.split('\n').map((item, key) => <Fragment key={key}>{item}<br /></Fragment>)}</p>
                                 </div>
                                 {/* <div className="at-progress">
                                     <div className="row">

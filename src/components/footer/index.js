@@ -17,7 +17,7 @@ const Footer = (props) => {
                         <div className="col col-lg-3 col-md-6 col-sm-12 col-12">
                             <div className="widget about-widget">
                                 <div className="logo widget-title">
-                                    <img src={Logo} alt="blog" width={200} height="100%" />
+                                    <img src={Logo} style={{filter:'brightness(500)'}} alt="blog" width={200} height="100%" />
                                 </div>
                                 <p>Discover interest-free financial freedom through Nimal Maula Foundation's initiative for all</p>
                                 {/* <ul>

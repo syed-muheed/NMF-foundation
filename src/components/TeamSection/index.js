@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Teams from '../../api/team'
+import { Teams } from '../../api/team'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

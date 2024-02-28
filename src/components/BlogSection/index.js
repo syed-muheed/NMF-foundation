@@ -16,9 +16,8 @@ const BlogSection = (props) => {
                     <div className="col-lg-6">
                         <div className="wpo-section-title">
                             <span>Our Blog</span>
-                            <h2>Latest News & Update</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                suffered alteration in some form,</p>
+                            <h2>Explore Insights & Stories</h2>
+                            <p>Dive into our blog for inspiring articles, impactful stories, and valuable insights on financial freedom and community empowerment.</p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +33,7 @@ const BlogSection = (props) => {
                                         <div className="wpo-blog-content-top">
                                             <h2><Link onClick={ClickHandler} to={`/blog-single/${blog.id}`}>{blog.title}</Link></h2>
                                         </div>
-                                        <div className="wpo-blog-content-btm">
+                                        {/* <div className="wpo-blog-content-btm">
                                             <div className="wpo-blog-content-btm-left">
                                                 <div className="wpo-blog-content-btm-left-img">
                                                     <img src={blog.authorImg} alt=""/>
@@ -46,7 +45,7 @@ const BlogSection = (props) => {
                                             <div className="wpo-blog-content-btm-right">
                                                 <span><i className="fi flaticon-chat-comment-oval-speech-bubble-with-text-lines"></i> {blog.comment}</span>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>

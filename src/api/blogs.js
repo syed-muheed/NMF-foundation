@@ -1,6 +1,6 @@
 // images
-import blogImg1 from "../images/blog/img-1.jpg";
-import blogImg2 from "../images/blog/img-2.jpg";
+import blogImg1 from "../images/blog/banner1.jpg";
+import blogImg2 from "../images/blog/banner2.jpg";
 import blogImg3 from "../images/blog/img-3.jpg";
 
 import blogImg4 from "../images/blog/img-4.jpg";
@@ -48,198 +48,101 @@ import blogSingleImg15 from "../images/blog/15.jpg";
 const blogs = [
     {
         id: '1',
-        title: 'Giving The Poor Is A Great Satisfiction Of heart.',
+        title: 'Guidance on Financial Transactions',
         screens: blogImg1,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
-        blogSingleImg:blogSingleImg1, 
-        comment:'35',
-        blClass:'format-standard-image',
+        description: `
+        <p>Surah Al-Baqarah, the second chapter of the Quran, holds profound wisdom and guidance for believers. In Ayah 279, Allah addresses the believers, emphasizing the significance of refraining from engaging in interest-based transactions or usury.</p>
+      
+        <p>The verse begins with the words "<span lang="ar" style="font-style:italic;">يَا أَيُّهَا الَّذِينَ آمَنُوا</span>" (O you who have believed), capturing the attention of those who have embraced faith. This signals that the guidance given is specifically for the believers who strive to follow the righteous path.</p>
+      
+        <p>The alternative proposed in the ayah is to "<span lang="ar" style="font-style:italic;">وَذَرُوا مَا بَقِيَ مِنَ الرِّبَا إِن كُنتُم مُّؤْمِنِينَ</span>" (give up what remains [due to you] of interest if you are [indeed] believers). Believers are encouraged to abandon the gains acquired through usurious means and instead engage in fair trade and transactions that uphold justice.</p>
+      
+        <p>The ayah continues with a stern warning against involvement in usury, urging believers to abandon such practices and offering a clear alternative: "<span lang="ar" style="font-style:italic;">فَإِن لَّم تَفْعَلُوا فَأْذَنُوا بِحَرْبٍ مِّنَ اللَّهِ وَرَسُولِهِ</span>" (And if you do not, then be informed of a war [against you] from Allah and His Messenger).</p>
+      
+        <p>This verse underscores the severity of engaging in usury, equating it with a declaration of war against Allah and His Messenger. It serves as a potent reminder of the spiritual and ethical consequences associated with financial transactions that exploit others through interest.</p>
+      
+        <p>Understanding the historical context is crucial. During the time of the revelation, the Arabian society was deeply entangled in usurious practices, exploiting the vulnerable and perpetuating economic injustices. The guidance in Surah Al-Baqarah aimed to transform the economic landscape and establish justice in financial dealings.</p>
+      
+        <p>This ayah highlights Islam's emphasis on economic justice. It encourages believers to be conscious of their financial dealings, ensuring that they align with ethical principles and contribute to the welfare of society.</p>
+      
+        <p>In conclusion, Surah Al-Baqarah (2:278-279) provides a powerful message on the prohibition of usury, stressing the need for believers to prioritize ethical financial practices. By abandoning interest-based transactions and embracing fair trade, Muslims can contribute to building a just and compassionate economic system, aligning their actions with the teachings of the Quran.</p>
+            `,
+        authorTitle: 'volunteer',
+        authorImg: blogAvaterImg1,
+        create_at: '28 FEB,24',
+        blogSingleImg: blogSingleImg1,
+        comment: '0',
+        blClass: 'format-standard-image',
     },
     {
         id: '2',
-        title: 'Your Help Can Make Someone’s life Easier.',
+        title: 'The Serious Warning Against Usury in Islam',
         screens: blogImg2,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
+        description: `        <div>
+  <h2>Introduction:</h2>
+  <p>
+    Islamic teachings strongly oppose the practice of usury or interest. This moral and economic principle is clearly stated in a saying by Jabir (may Allah be pleased with him) in Sahih Muslim (1598). This saying highlights the seriousness of engaging in usurious transactions and those involved in them.
+  </p>
+
+  <h2>The Hadith:</h2>
+  <p>
+    According to Jabir, Allah's Messenger (ﷺ) invoked Allah's curse upon those who accept interest, those who pay it, those who record it, and the witnesses. He emphasized, "They are all equal."
+  </p>
+
+  <h2>Understanding the Implications:</h2>
+
+  <p>
+    This saying emphasizes the gravity of dealing with interest, portraying it not just as a financial matter but as an action that displeases Allah. Prophet Muhammad (ﷺ) equates the different roles in a usurious transaction, stressing shared responsibility in sustaining an unjust system.
+  </p>
+
+  <ol>
+    <li>
+      <h3>The Accepter of Interest:</h3>
+      <p>
+        Those willingly engaging in usury, whether individuals or institutions, are condemned for actively participating in an unethical practice. This underscores the importance of personal accountability in financial matters.
+      </p>
+    </li>
+
+    <li>
+      <h3>The Payer of Interest:</h3>
+      <p>
+        The saying condemns not only those who receive interest but also those who willingly pay it, addressing the root of the problem and discouraging participation in transactions violating Islamic Financial principles.
+      </p>
+    </li>
+
+    <li>
+      <h3>The Recorder of Interest:</h3>
+      <p>
+        Those documenting interest transactions are not exempt from the curse, emphasizing Islam's holistic approach to justice—discouraging every step contributing to an unjust economic system.
+      </p>
+    </li>
+
+    <li>
+      <h3>The Two Witnesses:</h3>
+      <p>
+        Even witnesses attesting to the legitimacy of usurious transactions are held accountable. This serves as a reminder that the community should actively discourage and prevent such transactions instead of being passive spectators.
+      </p>
+    </li>
+  </ol>
+
+  <h2>The Equality of Blame:</h2>
+  <p>
+    The Prophet's statement, "They are all equal," rejects any notion of guilt hierarchy. Every individual involved in a usurious transaction shares equal responsibility, emphasizing the collective duty to eliminate this societal ill.
+  </p>
+
+  <h2>Conclusion:</h2>
+  <p>
+    This saying serves as a strong reminder for Muslims to conscientiously avoid involvement in usury, whether as a participant, recorder, or witness. It urges believers to follow and prioritize Islamic Financial laws and promotes a unified stand against economic practices that exploit others. Reflecting on these teachings, let us strive to build an economic system aligning with the ethical principles laid out by Prophet Muhammad (ﷺ) and embodying the true spirit of justice in Islam.
+  </p>
+</div>
+`,
         author: 'Konal Biry',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg2,
+        authorTitle: 'volunteer',
+        authorImg: blogAvaterImg2,
         create_at: '16 AUG,21',
-        blogSingleImg:blogSingleImg2, 
-        comment:'80',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '3',
-        title: 'Give Education, It’s The Best Gift Ever.',
-        screens: blogImg3,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg3,
-        create_at: '18 AUG,21',
-        blogSingleImg:blogSingleImg3,
-        comment:'95',
-        blClass:'format-video',
-    },
-    {
-        id: '4',
-        title: 'Let’s Save The Rare Birds From Hunting.',
-        screens: blogImg4,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
-        blogSingleImg:blogSingleImg4, 
-        comment:'35',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '5',
-        title: 'Don’t Shoot The Royel Tiger With Your Gun.',
-        screens: blogImg5,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Konal Biry',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg2,
-        create_at: '16 AUG,21',
-        blogSingleImg:blogSingleImg5, 
-        comment:'80',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '6',
-        title: 'Don’t be a thief, save coral reef Stop Killing The Reef.',
-        screens: blogImg6,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg3,
-        create_at: '18 AUG,21',
-        blogSingleImg:blogSingleImg6,
-        comment:'95',
-        blClass:'format-video',
-    },
-    {
-        id: '7',
-        title: 'Don’t treat oceans as universal garbage cans',
-        screens: blogImg7,
-        description: 'Don’t treat oceans as universal garbage cans',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
-        blogSingleImg:blogSingleImg7, 
-        comment:'35',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '8',
-        title: 'The sun and the sand makes beaches beautiful',
-        screens: blogImg8,
-        description: 'The sun and the sand makes beaches beautiful',
-        author: 'Konal Biry',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg2,
-        create_at: '16 AUG,21',
-        blogSingleImg:blogSingleImg8, 
-        comment:'80',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '9',
-        title: 'Don’t be a thief, save coral reef Stop Killing The Reef.',
-        screens: blogImg9,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg3,
-        create_at: '18 AUG,21',
-        blogSingleImg:blogSingleImg9,
-        comment:'95',
-        blClass:'format-video',
-    },
-    {
-        id: '10',
-        title: 'Everything you need to know about COVID-19 vaccine',
-        screens: blogImg10,
-        description: 'Don’t treat oceans as universal garbage cans',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
-        blogSingleImg:blogSingleImg10, 
-        comment:'35',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '11',
-        title: 'Coronavirus India cases and latest updates',
-        screens: blogImg11,
-        description: 'The sun and the sand makes beaches beautiful',
-        author: 'Konal Biry',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg2,
-        create_at: '16 AUG,21',
-        blogSingleImg:blogSingleImg11, 
-        comment:'80',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '12',
-        title: 'WHO issues clinical case definition of long COVID',
-        screens: blogImg12,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg3,
-        create_at: '18 AUG,21',
-        blogSingleImg:blogSingleImg12,
-        comment:'95',
-        blClass:'format-video',
-    },
-    {
-        id: '13',
-        title: 'Green is for hope just as gray is for death.',
-        screens: blogImg13,
-        description: 'Don’t treat oceans as universal garbage cans',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg1,
-        create_at: '14 AUG,21',
-        blogSingleImg:blogSingleImg13, 
-        comment:'35',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '14',
-        title: 'Clean and Green Means No One is Lean.',
-        screens: blogImg14,
-        description: 'The sun and the sand makes beaches beautiful',
-        author: 'Konal Biry',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg2,
-        create_at: '16 AUG,21',
-        blogSingleImg:blogSingleImg14, 
-        comment:'80',
-        blClass:'format-standard-image',
-    },
-    {
-        id: '15',
-        title: 'By recycling, you can change tomorrow, today.',
-        screens: blogImg15,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet autem beatae errodio.',
-        author: 'Jenefer Willy',
-        authorTitle:'volunteer',
-        authorImg:blogAvaterImg3,
-        create_at: '18 AUG,21',
-        blogSingleImg:blogSingleImg15,
-        comment:'95',
-        blClass:'format-video',
+        blogSingleImg: blogSingleImg2,
+        comment: '80',
+        blClass: 'format-standard-image',
     },
 ];
 export default blogs;
