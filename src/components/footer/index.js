@@ -97,7 +97,7 @@ const Footer = (props) => {
                 <div className="container">
                     <div className="row">
                         <div className="col col-xs-12">
-                            <p className="copyright"> &copy; 2023. All Rights Reserved. | <Link to='/terms'>Terms and Conditions</Link> | <Link to='/privacy-policy'>Privacy Policy</Link></p>
+                            <p className="copyright"> &copy; 2024. All Rights Reserved. | <Link to='/terms'>Terms and Conditions</Link> | <Link to='/privacy-policy'>Privacy Policy</Link></p>
                         </div>
                     </div>
                 </div>

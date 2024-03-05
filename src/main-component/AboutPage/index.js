@@ -13,6 +13,7 @@ import TeamSection from '../../components/TeamSection';
 import PartnerSection from '../../components/PartnerSection';
 import VolunteerTeamSection from '../../components/VolunteerTeamSection';
 import Navbar2 from '../../components/Navbar2';
+import ShariahTeamSection from '../../components/ShariahTeamSection';
 
 
 const AboutPage =() => {
@@ -23,7 +24,7 @@ const AboutPage =() => {
             {/* <VideoSec/> */}
             <Service Fclass={'wpo-features-section-s2'}/>
             <AboutS2/>
-            <VolunteerTeamSection />
+            <ShariahTeamSection />
             {/* <FunFact/> */}
             <CauseSection/>
             <TeamSection/>

@@ -12,20 +12,24 @@ import sajid from '../images/team/Mohammed Sajid Sharfi-1.jpg'
 import zubair from '../images/team/Syed Zubair Ahmad-1.jpg'
 import ishtiyaq from '../images/team/Mohammed Ishtyaqi-1.jpg'
 import sami from '../images/team/Sami Ullah-1.jpg'
+import sayeed from '../images/team/Dr. Shaik Sayeed Ahmed Umri Madani.jpg'
+import sheikh from '../images/team/Dr. Shaikh Usman Anees Umri.jpg'
+import shaikh from '../images/team/Shaik Syed Hussain Umri Madani.jpg'
+import hamid from '../images/team/Shaik Mohammad Hamid Madani.jpg'
 
 export const Teams = [
    {
       id: 'abdul-rahman-shakeel',
       tImg: timg1,
       name: 'Abdul Rahman Shakeel',
-      title: 'Director & Board of Trustees',
+      title: 'Founder | Director | Trustees',
       description: `Abdul Rahman Shakeel, an astute businessman and visionary leader, the Chief Executive Officer of Nimal Maula Groups, overseeing its diverse portfolio of ventures with a keen eye for innovation and growth. With a background in business management and entrepreneurship, he has steered the company towards new heights of success, fostering a culture of excellence and integrity. Under his leadership, Nimal Maula Groups has expanded its footprint across various industries, setting benchmarks for operational efficiency and corporate responsibility. As the founder and trustee of Nimal Maula Foundation, Abdul Rahman Shakeel is deeply committed to the mission of empowering communities and individuals.\n\nWith a focus on financial literacy and providing interest-free financial solutions, the foundation aims to alleviate poverty and promote economic independence. Abdul Rahman Shakeel’s dedication to social responsibility drives the foundation’s initiatives, making a tangible impact on the lives of those in need.`
    },
    {
       id: 'mohammed-farhan-shajeel',
       tImg: timg2,
-      name: 'Mohammed Farhan Shajeel',
-      title: 'Director & Board of Trustees',
+      name: 'MD. Farhan Shajeel',
+      title: 'Founder | Director | Trustees',
       description: 'Mohammed Farhan Shajeel, an esteemed interior designer renowned for his creative prowess, holds the distinguished positions of founder and Director at Nimal Maula Incociar Projects LLP, a leading firm in the design industry. With a stellar reputation for delivering exceptional design solutions, Mohammed Farhan brings innovation and vision to every project undertaken by the company. Beyond his professional endeavors, he is deeply committed to social welfare and community development.\n\nIn parallel to his role at Nimal Maula Incociar Projects LLP, Mohammed Farhan Shajeel serves as the founder and trustee of Nimal Maula Foundation, a charitable organization dedicated to establishing a riba-free financial system and providing assistance to individuals ensnared in interest-based loans. Driven by a profound sense of compassion and social responsibility, Mohammed Farhan has been actively involved in community service for the past 5 years, spearheading initiatives aimed at promoting financial literacy, alleviating poverty, and empowering marginalized groups. Through his leadership and dedication, he strives to create a more equitable society and uplift those in need.'
    },
    {
@@ -38,7 +42,7 @@ export const Teams = [
    {
       id: 'mohammed-dawood-pasha',
       tImg: timg4,
-      name: 'Mohammed Dawood Pasha',
+      name: 'MD. Dawood Pasha',
       title: 'Vice President',
       description: 'Dawood, Senior Technical Process Developer with around 15 years of experience in different business services, extensively in Infrastructure/Platform/Technology and business management. Most of his experience has been with Change management which basically involves implementing processes and strategies to help individuals and organizations transition from their current state to a desired future state effectively. His experience with change management includes guiding teams through organizational changes, facilitating communications, managing resistance, and ensuring successful adoption of new processes or technologies. Certified in ITIL, Lean Six Sigma Green Belt.\n\nIn his role as Vice President at Nimal Maula Foundation, Dawood entails significant responsibility which manifests in various ways, including ensuring transparency and accountability in operations. He ensures effective utilization of resources for the betterment of communities, upholding ethical standards in all activities and actively contributing to positive social change.'
    },
@@ -85,3 +89,29 @@ export const Volunteers = [
    },
 ]
 
+export const ShariahExperts = [
+   {
+      id: '1',
+      tImg: sayeed,
+      name: 'Dr. Sayeed Ahmed Umri Madani',
+      title: 'Shariah Advisor',
+   },
+   {
+      id: '2',
+      tImg: sheikh,
+      name: 'Dr. Sheikh Usman Anees Umri',
+      title: 'Shariah Advisor',
+   },
+   {
+      id: '3',
+      tImg: shaikh,
+      name: 'Shaikh Syed Hussain Umri Madani',
+      title: 'Shariah Advisor',
+   },
+   {
+      id: '4',
+      tImg: hamid,
+      name: 'Shaikh Mohammed Hamid Madani',
+      title: 'Shariah Advisor',
+   },
+]

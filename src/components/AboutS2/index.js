@@ -48,22 +48,15 @@ const AboutS2 = (props) => {
                     </div>
                     <div className="col-lg-6 col-md-12 col-12">
                         <div className="wpo-about-text">
-                            <span>About Us</span>
-                            <h2>Financial Liberation: Riba-Free Solutions.</h2>
-                            <p>Empowering individuals and families, the Nimal Maula Foundation is dedicated to providing financial literacy education and advocating for riba-free transactions in our community. Our commitment ensures fair and ethical financial solutions, liberating people from the burden of riba. </p>
+                            <span>Mission</span>
+                            <h2>Constructing Pathways To Financial Independence.</h2>
+                            <p>Join us in our mission to empower communities towards Riba-free financial freedom. Through innovative initiatives, we provide tools and resources for stability and equality.</p>
                             <ul>
-                                <li>Elevate financial well-being.</li>
-                                <li>Holistic monetary and non-monetary support.</li>
-                                <li>Navigate poverty with sustainable measures</li>
+                                <li>Explore 'Halalfy' App for Islamic financial education.</li>
+                                <li>Discover Qarz-e-Hasna, promoting financial fairness.</li>
+                                <li>Make an impact with Zakat, freeing individuals from Riba.</li>
+                                <li>Contribute to our Riba for Impact initiative, paving the way for financial freedom.</li>
                             </ul>
-                            <h6>Financial Liberation Initiatives</h6>
-                            <p>Dedicated to financial freedom, we undertake diverse programs, providing both monetary and non-monetary assistance to empower individuals, liberating them from poverty and debt traps.</p>
-                            <ul>
-                                <li>Comprehensive poverty alleviation programs.</li>
-                                <li>Holistic monetary and non-monetary support.</li>
-                                <li>Aims to break free from debt traps.</li>
-                            </ul>
-                            {/* <Link onClick={ClickHandler} className="theme-btn-s2" to="/about">More About</Link> */}
                         </div>
                     </div>
                 </div>

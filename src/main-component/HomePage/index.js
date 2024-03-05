@@ -24,7 +24,7 @@ const HomePage = () => {
         <Fragment>
             <Navbar2 Logo={Logo} />
             <Hero />
-            {/* <Service Fclass={'wpo-features-section-s2'} vclassClass={'v1'}/> */}
+            <Service Fclass={'wpo-features-section-s2'} vclassClass={'v1'}/>
             <About />
             <CauseSection />
             <VolunteerTeamSection />

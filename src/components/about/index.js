@@ -58,7 +58,14 @@ const About = (props) => {
                                 <li>Holistic monetary and non-monetary support.</li>
                                 <li>Navigate poverty with sustainable measures</li>
                             </ul>
-                            {/* <Link onClick={ClickHandler} className="theme-btn-s2" to="/about">More About</Link> */}
+                            <h6>Financial Liberation Initiatives</h6>
+                            <p>Dedicated to financial freedom, we undertake diverse programs, providing both monetary and non-monetary assistance to empower individuals, liberating them from poverty and debt traps.</p>
+                            <ul>
+                                <li>Comprehensive poverty alleviation programs.</li>
+                                <li>Holistic monetary and non-monetary support.</li>
+                                <li>Aims to break free from debt traps.</li>
+                            </ul>
+                            <Link onClick={ClickHandler} className="theme-btn-s2" to="/more-about">More About</Link>
                         </div>
                     </div>
                 </div>

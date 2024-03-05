@@ -6,14 +6,14 @@
     padding: 120px 0 45px;
 }
 
-.volunteer-wrap{
+.volunteer-wrap {
     padding-bottom: 120px;
 }
 
 .volunter-img {
     padding: 30px;
 
-    img{
+    img {
         width: 100%;
     }
 }
@@ -39,7 +39,7 @@
     font-size: 14px;
 }
 
-.volunteer-contact-form form label.error{
+.volunteer-contact-form form label.error {
     height: 15px;
     border: 0;
     line-height: 10px;
@@ -52,7 +52,7 @@
     position: absolute;
 }
 
-.volunteer-contact-form form textarea{
+.volunteer-contact-form form textarea {
     height: 100px;
 }
 
@@ -76,9 +76,13 @@
     margin: auto;
     padding: 50px 40px;
     background: #fff;
-    margin-top: -295px;
+    // margin-top: -295px;
     position: relative;
     z-index: 1;
+    border: 1px solid #eee;
+    -webkit-box-shadow: 0px 0px 15px -3px rgba(115, 115, 115, 1);
+    -moz-box-shadow: 0px 0px 15px -3px rgba(115, 115, 115, 1);
+    box-shadow: 0px 0px 15px -3px rgba(115, 115, 115, 1);
 }
 
 .volunteer-contact-form:after {
@@ -99,7 +103,7 @@
     width: 102%;
     height: 47%;
     content: "";
-    background: #d9f7eb;
+    // background: #d9f7eb;
     z-index: -1;
 }
 
@@ -115,7 +119,7 @@
         max-width: 635px;
         margin-top: -210px;
 
-        &:before{
+        &:before {
             height: 62%;
             width: 103%;
         }
@@ -151,26 +155,26 @@
 6. wpo-Attorney-single
 ===========================================*/
 
-.attorney-pg-area{
+.attorney-pg-area {
     max-width: 1080px;
     margin: 0 auto;
 }
 
 .attorney-info-img {
     padding: 25px;
-    box-shadow: 0px 6px 20px 4px rgba(176, 191, 238,.12);
+    box-shadow: 0px 6px 20px 4px rgba(176, 191, 238, .12);
 
-    @media(max-width:991px){
+    @media(max-width:991px) {
         margin-bottom: 40px;
-     }
+    }
 
-    img{
+    img {
         width: 100%;
         height: 465px;
         object-fit: cover;
 
-        @media(max-width:991px){
-           height: 100%;
+        @media(max-width:991px) {
+            height: 100%;
         }
     }
 }
@@ -188,37 +192,38 @@
     box-shadow: 0px 6px 20px 4px rgba(176, 191, 238, .12);
     padding: 58px 50px;
 
-    ul{
-        li{
+    ul {
+        li {
             font-size: 17px;
             color: #1d2327;
             font-weight: 700;
             margin-bottom: 22px;
             list-style: none;
 
-            &:last-child{
+            &:last-child {
                 padding-bottom: 0;
             }
 
-            span{
+            span {
                 font-size: 16px;
                 color: #8c8c8c;
                 display: inline-block;
                 position: relative;
                 padding-left: 5px;
             }
-            &:last-child{
+
+            &:last-child {
                 margin-bottom: 0;
             }
         }
     }
 }
 
-.at-progress{
+.at-progress {
     box-shadow: 0px 5px 15px 0px rgba(62, 65, 159, 0.1);
     padding: 40px 0;
 
-    @media(max-width:991px){
+    @media(max-width:991px) {
         padding-bottom: 0;
     }
 }
@@ -236,9 +241,11 @@
         padding: 20px;
     }
 }
+
 .attorney-info-wrap ul {
     padding-left: 0;
 }
+
 .exprience-wrap p {
     color: #5d5851;
     margin-bottom: 30px;
@@ -248,214 +255,217 @@
     padding-bottom: 40px;
 }
 
-.at-progress{
+.at-progress {
+
     /*progress-design*/
-.progress {
-    width: 150px;
-    height: 150px;
-    background: none;
-    margin: 0 auto;
-    box-shadow: none;
-    position: relative;
-    overflow: unset;
-}
-
-.progress:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 6px solid #ebebeb;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.progress>span {
-    width: 50%;
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    z-index: 1;
-}
-
-.progress .progress-left {
-    left: 0;
-}
-
-.progress .progress-bar {
-    width: 100%;
-    height: 100%;
-    background: none;
-    border-width: 6px;
-    border-style: solid;
-    position: absolute;
-    top: 0;
-}
-
-.progress .progress-left .progress-bar {
-    left: 100%;
-    border-top-right-radius: 80px;
-    border-bottom-right-radius: 80px;
-    border-left: 0;
-    -webkit-transform-origin: center left;
-    transform-origin: center left;
-}
-
-.progress .progress-right {
-    right: 0;
-}
-
-.progress .progress-right .progress-bar {
-    left: -100%;
-    border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    border-right: 0;
-    -webkit-transform-origin: center right;
-    transform-origin: center right;
-    animation: loading-1 1.8s linear forwards;
-}
-
-.progress .progress-value {
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
-    background: #fff;
-    font-size: 40px;
-    color: $theme-primary-color;
-    line-height: 135px;
-    text-align: center;
-    position: absolute;
-    top: -5%;
-    left: 5%;
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-}
-
-
-
-.progress .progress-bar {
-    border-color: $theme-primary-color;
-}
-
-
-.progress-name {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 25%;
-    width: 100%;
-    text-align: center;
-}
-
-.progress-name span {
-    font-size: 15px;
-    color: #131058;
-    line-height: 15px;
-}
-
-.progress.blue .progress-left .progress-bar {
-    animation: loading-2 1.5s linear forwards 1.8s;
-}
-
-.progress.yellow .progress-left .progress-bar {
-    animation: loading-3 1s linear forwards 1.8s;
-}
-
-.progress.pink .progress-left .progress-bar {
-    animation: loading-4 0.4s linear forwards 1.8s;
-}
-
-.progress.green .progress-left .progress-bar {
-    animation: loading-5 1.2s linear forwards 1.8s;
-}
-
-@keyframes loading-1 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-}
-
-@keyframes loading-2 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
-}
-
-@keyframes loading-3 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(120deg);
-        transform: rotate(120deg);
-    }
-}
-
-@keyframes loading-4 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(46deg);
-        transform: rotate(46deg);
-    }
-}
-
-@keyframes loading-5 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(36deg);
-        transform: rotate(36deg);
-    }
-}
-
-@media only screen and (max-width: 990px) {
     .progress {
-        margin-bottom: 60px;
+        width: 150px;
+        height: 150px;
+        background: none;
+        margin: 0 auto;
+        box-shadow: none;
+        position: relative;
+        overflow: unset;
     }
-}
 
-.progress:before {
-    position: absolute;
-    left: -14px;
-    top: -15px;
-    width: 120%;
-    height: 120%;
-    background: #fff;
-    content: "";
-    border-radius: 50%;
-}
+    .progress:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 6px solid #ebebeb;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .progress>span {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+
+    .progress .progress-left {
+        left: 0;
+    }
+
+    .progress .progress-bar {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-width: 6px;
+        border-style: solid;
+        position: absolute;
+        top: 0;
+    }
+
+    .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        -webkit-transform-origin: center left;
+        transform-origin: center left;
+    }
+
+    .progress .progress-right {
+        right: 0;
+    }
+
+    .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 80px;
+        border-bottom-left-radius: 80px;
+        border-right: 0;
+        -webkit-transform-origin: center right;
+        transform-origin: center right;
+        animation: loading-1 1.8s linear forwards;
+    }
+
+    .progress .progress-value {
+        width: 90%;
+        height: 90%;
+        border-radius: 50%;
+        background: #fff;
+        font-size: 40px;
+        color: $theme-primary-color;
+        line-height: 135px;
+        text-align: center;
+        position: absolute;
+        top: -5%;
+        left: 5%;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+    }
+
+
+
+    .progress .progress-bar {
+        border-color: $theme-primary-color;
+    }
+
+
+    .progress-name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .progress-name span {
+        font-size: 15px;
+        color: #131058;
+        line-height: 15px;
+    }
+
+    .progress.blue .progress-left .progress-bar {
+        animation: loading-2 1.5s linear forwards 1.8s;
+    }
+
+    .progress.yellow .progress-left .progress-bar {
+        animation: loading-3 1s linear forwards 1.8s;
+    }
+
+    .progress.pink .progress-left .progress-bar {
+        animation: loading-4 0.4s linear forwards 1.8s;
+    }
+
+    .progress.green .progress-left .progress-bar {
+        animation: loading-5 1.2s linear forwards 1.8s;
+    }
+
+    @keyframes loading-1 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+    }
+
+    @keyframes loading-2 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+        }
+    }
+
+    @keyframes loading-3 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(120deg);
+            transform: rotate(120deg);
+        }
+    }
+
+    @keyframes loading-4 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(46deg);
+            transform: rotate(46deg);
+        }
+    }
+
+    @keyframes loading-5 {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(36deg);
+            transform: rotate(36deg);
+        }
+    }
+
+    @media only screen and (max-width: 990px) {
+        .progress {
+            margin-bottom: 60px;
+        }
+    }
+
+    .progress:before {
+        position: absolute;
+        left: -14px;
+        top: -15px;
+        width: 120%;
+        height: 120%;
+        background: #fff;
+        content: "";
+        border-radius: 50%;
+    }
 
 }
 
 .education-area {
     max-width: 600px;
 }
-.education-area ul{
+
+.education-area ul {
     list-style: none;
 }
+
 .education-area ul li {
     padding-bottom: 15px;
     position: relative;
@@ -489,20 +499,20 @@
     margin-left: -10px;
 }
 
-.wpo-contact-area .quote-form .form-control{
+.wpo-contact-area .quote-form .form-control {
     height: 55px;
     border: 1px solid #ebebeb;
     margin-bottom: 20px;
     padding: 15px;
 
-    &:focus{
+    &:focus {
         outline: none;
         box-shadow: none;
         border-color: $theme-primary-color;
     }
 }
 
-.wpo-contact-area .quote-form textarea.form-control{
+.wpo-contact-area .quote-form textarea.form-control {
     height: 125px;
 }
 
@@ -528,7 +538,7 @@
     .attorney-info-img {
         padding: 50px;
 
-        img{
+        img {
             width: 100%;
         }
     }
@@ -563,8 +573,8 @@
 }
 
 
-.language-area{
-    ul{
+.language-area {
+    ul {
         list-style: none;
     }
 }
