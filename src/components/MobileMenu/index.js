@@ -14,6 +14,26 @@ const menus = [
         id: 2,
         title: 'About',
         link: '/about',
+        submenu: [
+            {
+                id: 21,
+                title: 'Mission',
+                link: '/about#mission'
+            }, {
+                id: 22,
+                title: 'Shariah Team',
+                link: '/about#shariahTeam'
+            }, {
+                id: 23,
+                title: 'Leadership Team',
+                link: '/about#leadershipTeam'
+            }
+        ]
+    },
+    {
+        id: 4,
+        title: 'Blog',
+        link: '/#blog',
     },
     // {
     //     id: 3,
@@ -22,7 +42,7 @@ const menus = [
     // },
 
     {
-        id: 4,
+        id: 5,
         title: 'Contact Us',
         link: '/contact',
     },
