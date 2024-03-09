@@ -59,7 +59,7 @@ class TeamSection extends Component {
         }
 
         return (
-            <div className="wpo-team-area section-padding">
+            <div className="wpo-team-area section-padding" id="leadershipTeam">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-6">

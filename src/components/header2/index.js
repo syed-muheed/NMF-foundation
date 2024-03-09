@@ -54,6 +54,14 @@ export default class Header2 extends Component {
                                             </li>
                                             <li className="menu-item-has-children">
                                                 <Link to="/about">About</Link>
+                                                <ul className="sub-menu">
+                                                    <li><Link onClick={ClickHandler} to="/about#mission">Mission</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/about#shariahTeam">Shariah Team</Link></li>
+                                                    <li><Link onClick={ClickHandler} to="/about#leadershipTeam">Leadership Team</Link></li>
+                                                </ul>
+                                            </li>
+                                            <li className="menu-item-has-children">
+                                                <Link onClick={ClickHandler} to="/#blog">Blog</Link>
                                             </li>
                                             {/* <li className="menu-item-has-children">
                                                 <Link to="/projects">Projects</Link>

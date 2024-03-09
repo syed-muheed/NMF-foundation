@@ -5,7 +5,7 @@ import zakatBanner from '../../images/zakat-banner.png'
 import endowmentBanner from '../../images/impact-interest-banner.png'
 
 const CauseSection = (props) => {
-    const ClickHandler = (e,donationType) => {
+    const ClickHandler = (e, donationType) => {
         e.preventDefault();
         if (donationType === 'zakat') {
             window.location.href = 'https://payg.in/customer/#/pay-profile/DonateZakat'
@@ -40,14 +40,14 @@ const CauseSection = (props) => {
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            <h2>Empowering Communities. Liberating Finances by sadaqah.</h2>
+                                            <h2>Empowering Communities. Liberating Finances by Sadaqah.</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>
                                                         <span><img src='' alt="" /></span>
                                                         <span><Link onClick={ClickHandler} to={`/cause-single/`}></Link></span>
                                                     </li>
-                                                    <li><a href='https://payg.in/customer/#/pay-profile/DonateSadaqah'  className="e-btn" >Donate Sadaqah</a></li>
+                                                    <li><a href='https://payg.in/customer/#/pay-profile/DonateSadaqah' className="e-btn" >Donate Sadaqah</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ const CauseSection = (props) => {
                                     </div>
                                     <div className="wpo-campaign-content">
                                         <div className="wpo-campaign-text-top">
-                                            <h2>Purify your<br /> earnings by removing <br />Riba</h2>
+                                            <h2>Purify your<br /> earnings by removing <br />Riba.</h2>
                                             <div className="campaign-btn">
                                                 <ul>
                                                     <li>

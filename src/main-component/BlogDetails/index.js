@@ -5,8 +5,9 @@ import Scrollbar from '../../components/scrollbar'
 import { useParams } from 'react-router-dom'
 import blogs from '../../api/blogs'
 import BlogSingle from '../../components/BlogDetails'
-import Logo from '../../images/logo.png'
+import Logo from '../../images/logo-nmf.png'
 import Footer from '../../components/footer';
+import Navbar2 from '../../components/Navbar2';
 
 
 const BlogDetails =() => {
@@ -17,7 +18,7 @@ const BlogDetails =() => {
 
     return(
         <Fragment>
-            <Navbar Logo={Logo}/>
+            <Navbar2 Logo={Logo}/>
             <PageTitle pageTitle={BlogDetails.title} pagesub={'Blog'}/> 
              <BlogSingle/>
              <Footer/>

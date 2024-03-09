@@ -1,7 +1,7 @@
 // images
 import blogImg1 from "../images/blog/banner1.jpg";
 import blogImg2 from "../images/blog/banner2.jpg";
-import blogImg3 from "../images/blog/img-3.jpg";
+import blogImg3 from "../images/blog/banner3.jpg";
 
 import blogImg4 from "../images/blog/img-4.jpg";
 import blogImg5 from "../images/blog/img-5.jpg";
@@ -46,11 +46,11 @@ import blogSingleImg15 from "../images/blog/15.jpg";
 
 
 const blogs = [
-    {
-        id: '1',
-        title: 'Guidance on Financial Transactions',
-        screens: blogImg1,
-        description: `
+  {
+    id: '1',
+    title: 'Guidance on Financial Transactions',
+    screens: blogImg1,
+    description: `
         <p>Surah Al-Baqarah, the second chapter of the Quran, holds profound wisdom and guidance for believers. In Ayah 279, Allah addresses the believers, emphasizing the significance of refraining from engaging in interest-based transactions or usury.</p>
       
         <p>The verse begins with the words "<span lang="ar" style="font-style:italic;">يَا أَيُّهَا الَّذِينَ آمَنُوا</span>" (O you who have believed), capturing the attention of those who have embraced faith. This signals that the guidance given is specifically for the believers who strive to follow the righteous path.</p>
@@ -67,18 +67,18 @@ const blogs = [
       
         <p>In conclusion, Surah Al-Baqarah (2:278-279) provides a powerful message on the prohibition of usury, stressing the need for believers to prioritize ethical financial practices. By abandoning interest-based transactions and embracing fair trade, Muslims can contribute to building a just and compassionate economic system, aligning their actions with the teachings of the Quran.</p>
             `,
-        authorTitle: 'volunteer',
-        authorImg: blogAvaterImg1,
-        create_at: '28 FEB,24',
-        blogSingleImg: blogSingleImg1,
-        comment: '0',
-        blClass: 'format-standard-image',
-    },
-    {
-        id: '2',
-        title: 'The Serious Warning Against Usury in Islam',
-        screens: blogImg2,
-        description: `        <div>
+    authorTitle: 'volunteer',
+    authorImg: blogAvaterImg1,
+    create_at: '28 FEB,24',
+    blogSingleImg: blogSingleImg1,
+    comment: '0',
+    blClass: 'format-standard-image',
+  },
+  {
+    id: '2',
+    title: 'The Serious Warning Against Usury in Islam',
+    screens: blogImg2,
+    description: `        <div>
   <h2>Introduction:</h2>
   <p>
     Islamic teachings strongly oppose the practice of usury or interest. This moral and economic principle is clearly stated in a saying by Jabir (may Allah be pleased with him) in Sahih Muslim (1598). This saying highlights the seriousness of engaging in usurious transactions and those involved in them.
@@ -136,13 +136,29 @@ const blogs = [
   </p>
 </div>
 `,
-        author: 'Konal Biry',
-        authorTitle: 'volunteer',
-        authorImg: blogAvaterImg2,
-        create_at: '16 AUG,21',
-        blogSingleImg: blogSingleImg2,
-        comment: '80',
-        blClass: 'format-standard-image',
-    },
+    author: 'Konal Biry',
+    authorTitle: 'volunteer',
+    authorImg: blogAvaterImg2,
+    create_at: '16 AUG,21',
+    blogSingleImg: blogSingleImg2,
+    comment: '80',
+    blClass: 'format-standard-image',
+  },
+  {
+    id: '3',
+    title: 'Embracing Balance and Gratitude',
+    screens: blogImg3,
+    description: `        <div>
+<h2>Coming soon...</h2>
+</div>
+`,
+    author: 'Konal Biry',
+    authorTitle: 'volunteer',
+    authorImg: blogAvaterImg2,
+    create_at: '16 AUG,21',
+    blogSingleImg: blogSingleImg2,
+    comment: '80',
+    blClass: 'format-standard-image',
+  },
 ];
 export default blogs;

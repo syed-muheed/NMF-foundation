@@ -46,8 +46,8 @@ const AllRoute = () => {
         <Routes>
         <Route exact path='/' element={<Homepage />} />
           <Route exact path='/donate' element={<CausePage />} />
-          <Route path='about' element={<CauseSinglePage />} />
-          <Route path='more-about' element={<AboutPage />} />
+          {/* <Route path='about' element={<CauseSinglePage />} /> */}
+          <Route path='about' element={<AboutPage />} />
           {/* <Route path='projects' element={<ProjectPage />} />
           <Route path='project-single/:id' element={<ProjectSinglePage />} /> */}
           <Route path="contact" element={<ContactPage />} />

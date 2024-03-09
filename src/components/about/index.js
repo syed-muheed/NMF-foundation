@@ -65,7 +65,7 @@ const About = (props) => {
                                 <li>Holistic monetary and non-monetary support.</li>
                                 <li>Aims to break free from debt traps.</li>
                             </ul>
-                            <Link onClick={ClickHandler} className="theme-btn-s2" to="/more-about">More About</Link>
+                            <Link onClick={ClickHandler} className="theme-btn-s2" to="/about">More About</Link>
                         </div>
                     </div>
                 </div>
