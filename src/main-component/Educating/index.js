@@ -8,8 +8,8 @@ const handleRegisterClick = () => {
 
   return (
  <div className="educating-container">
- <img
- src="/images/educating-banner.jpg"
+ <img onClick={handleRegisterClick}
+ src="/images/WelcomeScreen.jpg"
 alt="Educating Module"
 className="educating-image"
  />

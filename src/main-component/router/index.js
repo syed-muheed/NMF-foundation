@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 
-import EducatingM1B1 from '../EducatingM1B1';
+
 import Homepage from '../HomePage'
 import Homepage2 from '../HomePage2'
 import Homepage3 from '../HomePage3'
@@ -38,6 +38,7 @@ import ForgotPassword from '../ForgotPassword'
 import PrivacyPolicy from '../PrivacyPolicy';
 import Terms from '../Terms';
 import DonationReceipt from '../DonationReceipt';
+import EducatingM1B1 from '../Educating';
 
 
 const AllRoute = () => {
