@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
+
+import EducatingM1B1 from '../EducatingM1B1';
 import Homepage from '../HomePage'
 import Homepage2 from '../HomePage2'
 import Homepage3 from '../HomePage3'
@@ -59,6 +61,8 @@ const AllRoute = () => {
           <Route path='team-single/:id' element={<TeamSinglePage />} />
           <Route path='blog-single/:id' element={<BlogDetails />} />
           <Route path='volunteer' element={<VolunteerPage />} />
+
+          <Route path="/educating/m1-b1" element={<EducatingM1B1 />} />
 
           {/* <Route exact path='/' element={<Homepage />} />
           <Route path='home' element={<Homepage />} />
